@@ -23,6 +23,8 @@ INSTALLED_APPS = [
     #my_apps
     'blog_app.apps.BlogAppConfig',
     'user_app.apps.UserAppConfig',
+    'crispy_forms',
+    'crispy_bootstrap5',
 
     #django_apps
     'django.contrib.admin',
@@ -121,3 +123,7 @@ LOGIN_REDIRECT_URL = 'blog_app-home'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
