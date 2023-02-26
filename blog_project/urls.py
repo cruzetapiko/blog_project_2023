@@ -6,7 +6,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     #path to blog_app application
-    path('admin/', include('blog_app.urls')),
+    path('', include('blog_app.urls')),
 
     
 ]
