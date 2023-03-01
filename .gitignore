@@ -1,6 +1,6 @@
 #ignore files#
 v_env
-*.__pycache__
+*.pyc
 
 # Compiled source #
 ###################
