@@ -9,7 +9,9 @@
         <div class="media-body">
             <div class="article-metadata">
                 <small><a class="mr-2 article-title" href="#">{{ post.author }}</a></small>
-                <small><a class="mr-2 article-title" href="{% url 'blog_app-post-update' post.id %}">Update Post</a></small>
+                {% if user == post.author %}
+                    <small><a class="mr-2 article-title" href="{% url 'blog_app-post-update' post.id %}">Update Post</a></small>
+                {% endif %}
                 <small class="text-muted">{{ post.date_posted|date:"F d,Y" }}</small>
             </div>
             <h2><a class="article-title" href="{% url 'blog_app-post-detail' post.id %}">{{ post.title }}</a></h2>
