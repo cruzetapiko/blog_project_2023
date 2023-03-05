@@ -1,3 +1,7 @@
+superuser
+    .user: cs50
+    .pass: cs502023
+
 Project Title
     .Django-Blog-2023
 
