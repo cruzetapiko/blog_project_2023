@@ -62,17 +62,3 @@ class DeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         if self.request.user == post.author:
             return True
         return False
-
-
-
-def home(request):
-
-    context = {
-        'posts': Post.objects.all()
-    }
-
-    return render(request, 'blog_app/index.html', context)
-
-def about(request):
-
-    return render(request, 'blog_app/about.html')
